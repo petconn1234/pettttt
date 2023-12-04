@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    margin: 0 ;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+  body {
+    font-family: 'Roboto', sans-serif;
+
+    
+  }
+
+:root{
+   --main-color:#11f233;
+   --main-color2:#542e71;
+}
+
+.container{
+
+    padding: 10px 30px;
+    width: 90%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
+    
+
+}
+.form{
+    width: 350px;
+    margin: auto;
+}
+.container h2{
+   padding-top: 5px;
+   font-size: 25px;
+   font-weight: 600;
+   text-align: center;
+   line-height: 33px;
+   padding: 30px 0;
+}
+.container form{
+   margin: 5px 8px;;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.container form .field{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    margin: 15px 0;
+    position: relative;
+
+}
+
+form .field input,textarea{
+   width: 100%;
+   height: 100%;
+   border: 1px solid lightgray;
+   padding-left: 15px;
+   outline:none;
+   border-radius: 5px;
+   font-size: 17px;
+   transition: all 0.3s;
+}
+
+
+form .field input::placeholder{
+   font-size: 16px;
+}
+
+form .field input:focus{
+   border-color: var(--main-color);
+   box-shadow: inset 0 0 3px var(--main-color);
+}
+
+form .field .show{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+    display: none;
+}
+form .field .show.active{
+   color: var(--main-color);
+}
+
+form button{
+   width: 100%;
+   height: 45px;
+   margin: 3px 0 10px 0;
+   border: none;
+   outline: none;
+   background: var(--main-color);
+   border-radius: 5px;
+   color: #fff;
+   font-weight: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   opacity: 0.7;
+}
+
+form button:hover {
+   cursor: pointer;
+   opacity: 1;
+   transition: all 0.3s;
+}
+
+form button.active:hover{
+   background: var(--main-color);
+}
+
+
+/* task-container */
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+
+
+}
+
+.task-container .box{
+    height: 200px;
+    width: 25%;
+    padding: 20px ;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    
+}
+.task-container .box p{
+    padding: 15px 0;
+}
+.task-container .box button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 0;
+    transition: .4s ease-in-out;
+}
+
+.task-container .box .btn-delete, .edit-btn:hover{
+    background: var(--main-color);
+    border: 0;
+    color: #fff;
+}
+.task-container .box  .btn-delete:hover ,.edit-btn{
+    background: transparent;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+body {
+    background-image: url('/refugio/fondito.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+    z-index: -1; /* Para asegurarse de que esté detrás del contenido */
+}

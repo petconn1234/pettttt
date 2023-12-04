@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--www.divinectorweb.com-->
+<head>
+	<meta charset="UTF-8">
+	<title>Petconnect</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="/welcome/css/style.css" rel="stylesheet">
+    
+    <link href="/welcome/perros/style.css" rel="stylesheet">
+    
+    <script  type="module" src="/config/firebaseconect.js" >  </script>
+   
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><span>Pet</span>Connect</a> <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="perros.html">Perros</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Refugios</a>
+					</li>
+					
+					<li id="miElemento" class="nav-item">
+						<a class="nav-link" href="#"></a>
+					</li>
+					
+
+					<li id="logout" class="nav-item">
+					
+
+					</li>     
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <br>
+    
+	<div class="overlay"></div>
+    <div class="container">
+		<div class="form">
+		    <h2 class="text-center text-warning"></h2>
+            <form id="task-form">
+                    <div class="field">
+                        <input type="text" id="nombre" placeholder="Nombre " autofocus />
+                    </div>
+                    <div class="field">  
+                        <input type="text" id="edad" placeholder="Edad" autofocus />
+                    </div>
+					<div class="field">  
+                        <input type="text" id="Telefono" placeholder="Telefono" autofocus />
+                    </div>
+                    <div class="field">  
+                        <input type="text" id="raza" placeholder="Raza" autofocus />
+                    </div>
+                    <div class="field">  
+                        <input type="text" id="genero" placeholder="genero" autofocus />
+                    </div>
+                    <div class="field">  
+                        <textarea id="descripcion" placeholder="Descripcion" autofocus></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="task-image" class="form-label">Subir imagen:</label>
+                        <input class="form-control" type="file" id="imagen" accept="image/*">
+                    </div>
+                
+                    <button class="btn btn-success" id="btn-task-form">  Guardar</button> 
+                </form>
+            
+		</div>
+		<div  class="task-container" id="tasks-container"></div>
+   
+	 </div>
+
+
+
+	<script type="module" src="/welcome/js/auth.js">	 </script>
+	
+	
+	<script  type="module" src="/welcome/js/logout.js" >  </script>
+
+    
+	<script  type="module" src="/welcome/perros/js/perros.js" >  </script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	
+
+ 
+</body>
