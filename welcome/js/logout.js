@@ -1,10 +1,19 @@
 import { ManageAccount } from '../../config/firebaseconect.js';
 
 
-function logout(){
 
-    const account = new ManageAccount();
-    account.signOut();
+document.addEventListener('DOMContentLoaded', function () {
+    const logoutButton = document.getElementById('logout');
 
-    console.log("buen dia");
-}
+    if (logoutButton) {
+        logoutButton.addEventListener('click', function () {
+            const account = new ManageAccount();
+            account.signOutUser();
+            console.log('Cerrar sesión');
+
+            
+        });
+    } else {
+        console.error('Elemento de botón de cierre de sesión no encontrado.');
+    }
+});

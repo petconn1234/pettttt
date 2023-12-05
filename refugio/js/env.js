@@ -21,7 +21,7 @@ var db = getFirestore(app);
 
 async function  guardarDatos(e) {
   e.preventDefault();
-
+  
   const nombre = document.getElementById('nombre');
   const numero = document.getElementById('numero');
   const email = document.getElementById('email');

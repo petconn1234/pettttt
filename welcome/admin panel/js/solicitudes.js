@@ -31,7 +31,7 @@ const aprobarSolicitud = async (documentoId, data, userEmail) => {
     try {
         await addDoc(refugiosCollection, {
             nombre: data.nombre,
-            email: userEmail,
+            email: data.email,
             direccion: data.direccion,
             numero: data.numero
         });
