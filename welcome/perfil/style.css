@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    background: #8BC34A; /* Verde opaco */
+}
+
+.card {
+    color: #fff;
+    width: 350px;
+    border-radius: 10px;
+    background: linear-gradient(145deg, #7da453, #8bc34a); /* Degradado verde opaco */
+    box-shadow: 20px 20px 60px #718b3c, 
+                -20px -20px 60px #95c858; /* Sombra verde opaca */
+    border: none;
+}
+
+.neo-button {
+    width: 40px;
+    height: 40px;
+    outline: 0 !important;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #7da453, #8bc34a); /* Degradado verde opaco para botones */
+    box-shadow: inset 20px 20px 60px #718b3c, 
+                inset -20px -20px 60px #95c858; /* Sombra interior verde opaca para botones */
+}
+
+.num {
+    color: #eee !important;
+}
+
+.line {
+    color: #fff;
+}
+
+.neo-button:active {
+    border-radius: 50%;
+    background: #8BC34A; /* Fondo verde opaco para botón activo */
+    box-shadow: 28px 28px 57px #718b3c, 
+                -28px -28px 57px #95c858; /* Sombra verde opaca para botón activo */
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-google {
+    color: #dc4e41;
+}
+
+.fa-youtube {
+    color: #cd201f;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.profile_button {
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: 0 !important;
+    border-radius: 50px;
+    background: #8BC34A; /* Fondo verde opaco para botón de perfil */
+    box-shadow: 28px 28px 57px #718b3c, 
+                -28px -28px 57px #95c858; /* Sombra verde opaca para botón de perfil */
+}
